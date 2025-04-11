@@ -1,0 +1,27 @@
+<div style="position: relative; width: 545px;">
+    <div class="input-container">
+      <input 
+        type="text" 
+        [(ngModel)]="query" 
+        (input)="onInput()" 
+        placeholder="Buscar..." 
+        autocomplete="off"
+      >
+      <button 
+        *ngIf="query" 
+        class="clear-button" 
+        (click)="clearQuery()"
+        type="button"
+      >
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div *ngIf="filteredItems.length > 0" class="autocomplete-results">
+        <div 
+            *ngFor="let item of filteredItems" class="autocomplete-item" 
+            (click)="selectItem(item)">
+            <a [innerHTML]="highlightText(item.nombre, query)"></a>
+        </div>
+    </div>
+</div>
+  

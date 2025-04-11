@@ -1,0 +1,49 @@
+.input-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .input-container input[type="text"] {
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px 32px 8px 8px; /* espacio para el botón a la derecha */
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  
+  .input-container .clear-button {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #888;
+    padding: 0;
+  }
+  
+  .input-container .clear-button:hover {
+    color: #000;
+  }
+  
+  .autocomplete-results {
+    color: black;
+    border: 1px solid #ddd;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background: white;
+    width: calc(100% - 2px);
+    z-index: 1000;
+  }
+  
+  .autocomplete-item {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .autocomplete-item:hover {
+    background-color: #929292;
+  }

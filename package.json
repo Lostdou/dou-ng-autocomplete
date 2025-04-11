@@ -1,0 +1,25 @@
+{
+  "name": "dou-ng-autocomplete",
+  "version": "1.0.5",
+  "description": "Simple autocomplete component made for Angular 18",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json"
+  },
+  "keywords": [
+    "angular",
+    "autocomplete",
+    "angular-component"
+  ],
+  "author": "lostdou",
+  "license": "ISC",
+  "devDependencies": {
+    "@angular/cli": "^19.2.7",
+    "ng-packagr": "^19.2.2"
+  },
+  "peerDependencies": {
+    "@angular/common": "^19.2.6",
+    "@angular/core": "^19.2.6",
+    "@angular/forms": "^19.2.6"
+  }
+}
