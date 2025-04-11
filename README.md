@@ -2,7 +2,7 @@
 
 Un componente simple de Autocomplete hecho para Angular 18+ 🚀
 
-[![npm version](https://badge.fury.io/js/dou-ng-autocomplete.svg)](https://www.npmjs.com/package/dou-ng-autocomplete)
+![npm](https://img.shields.io/npm/v/dou-ng-autocomplete)
 
 ## ✨ Características
 
